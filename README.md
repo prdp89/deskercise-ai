@@ -1,6 +1,8 @@
 # deskercise-ai
 Deskercise-AI is your personal trainer that provides step-by-step guidance for each exercise and progression, and your plan adapts over time as you complete.
 
+It uses [Movenet](https://www.kaggle.com/models/google/movenet/) to detect body joint points and score users based on the exercising moves.
+
 ## Demo UI
 <img src="art/demo.gif" width="250" />
 
