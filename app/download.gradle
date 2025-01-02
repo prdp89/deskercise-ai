@@ -1,0 +1,28 @@
+
+task downloadMovenetLightningModel(type: DownloadUrlTask) {
+    def modelMovenetLightningDownloadUrl = "https://url_here"
+    doFirst {
+        println "Downloading ${modelMovenetLightningDownloadUrl}"
+    }
+    sourceUrl = "${modelMovenetLightningDownloadUrl}"
+    target = file("src/main/assets/movenet_lightning.tflite")
+}
+
+task downloadModel {
+    dependsOn downloadMovenetLightningModel
+}
+
+class DownloadUrlTask extends DefaultTask {
+    @Input
+    String sourceUrl
+
+    @OutputFile
+    File target
+
+    @TaskAction
+    void download() {
+        ant.get(src: sourceUrl, dest: target)
+    }
+}
+
+//preBuild.dependsOn downloadModel

@@ -1,0 +1,18 @@
+
+
+task generateReleaseNote {
+    doLast({
+        println "Generating release notes since the latest tag(release_note.txt)"
+        def releaseNotes = new File('release_note.txt')
+        releaseNotes.delete()
+        releaseNotes << "Release note: \n"
+        def cmdLine = "git describe --tags --abbrev=0 @^"
+        def procCommit = cmdLine.execute()
+        def tag = ""
+        procCommit.in.eachLine { line -> tag = line }
+        def cmdLog = "git log --oneline $tag..@"
+        procCommit = cmdLog.execute()
+        procCommit.in.eachLine { line -> releaseNotes << line + "\n" }
+        releaseNotes << "\n\n\n"
+    })
+}

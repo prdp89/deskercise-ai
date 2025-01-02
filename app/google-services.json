@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "381094417292",
+    "project_id": "deskercise-ai",
+    "storage_bucket": "deskercise-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381094417292:android:b8edb59733c898cae17ca9",
+        "android_client_info": {
+          "package_name": "com.ai.app.move.deskercise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB_1xyW7XlcPNy0AdabvZCHLnFZEaYnbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
