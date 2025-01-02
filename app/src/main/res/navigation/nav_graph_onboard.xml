@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_onboard"
+    app:startDestination="@id/fragmentOnboardStepper">
+
+    <fragment
+        android:id="@+id/fragmentOnboardStepper"
+        android:name="com.ai.app.move.deskercise.ui.onboarding.FragmentOnboardStepper"
+        android:label="FragmentOnboardStepper"
+        tools:layout="@layout/fragment_onboarding_stepper"/>
+    <fragment
+        android:id="@+id/fragmentOnboardOne"
+        android:name="com.ai.app.move.deskercise.ui.onboarding.FragmentOnboardOne"
+        android:label="FragmentOnboardOne"
+        tools:layout="@layout/fragment_onboarding_one">
+        <action
+            android:id="@+id/action_fragmentOnboardOne_to_fragmentOnboardTwo"
+            app:destination="@id/fragmentOnboardTwo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentOnboardTwo"
+        android:name="com.ai.app.move.deskercise.ui.onboarding.FragmentOnboardTwo"
+        android:label="FragmentOnboardTwo"
+        tools:layout="@layout/fragment_onboarding_two">
+        <action
+            android:id="@+id/action_fragmentOnboardTwo_to_fragmentOnboardOne"
+            app:destination="@id/fragmentOnboardOne" />
+    </fragment>
+</navigation>

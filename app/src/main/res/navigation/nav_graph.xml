@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:tag="EXERCISE_GROUP_FRAGMENT"
+    app:startDestination="@id/ExerciseGroupMenuFragment">
+
+    <fragment
+        android:id="@+id/ExerciseGroupPreviewFragment"
+        android:name="com.ai.app.move.deskercise.ui.exerciseGroupMenu.ExerciseGroupPreviewFragment"
+        android:label="@string/first_fragment_label"
+        android:tag="EXERCISE_GROUP_FRAGMENT"
+        tools:layout="@layout/fragment_exercise_group_preview">
+        <action
+            android:id="@+id/action_ExerciseGroupPreviewFragment_to_ExerciseGroupMenuFragment"
+            app:destination="@id/ExerciseGroupMenuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ExerciseGroupMenuFragment"
+        android:name="com.ai.app.move.deskercise.ui.exerciseGroupMenu.ExerciseGroupMenuFragment"
+        android:label="@string/Deskercise_Group_Exercise_label"
+        android:tag="EXERCISE_GROUP_PREVIEW"
+        tools:layout="@layout/fragment_exercise_group_menu">
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@+id/ExerciseGroupPreviewFragment" />
+    </fragment>
+
+    <!--    <fragment-->
+<!--        android:id="@+id/SecondFragment"-->
+<!--        android:label="@string/first_fragment_label"-->
+<!--        tools:layout="@layout/fragment_exercise_starting">-->
+
+<!--        &lt;!&ndash;        <action&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/action_FirstFragment_to_SecondFragment"&ndash;&gt;-->
+<!--        &lt;!&ndash;            app:destination="@id/SecondFragment" />&ndash;&gt;-->
+<!--    </fragment>-->
+
+</navigation>

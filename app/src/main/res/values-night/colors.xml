@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="greenTheme">#6c5393</color>
+    <color name="redTheme">#5e4486</color>
+    <color name="blueTheme">#4b3173</color>
+
+    <color name="colorPrimary">#FF000000</color>
+    <color name="colorPrimaryInverse">#FFFFFFFF</color>
+    <color name="colorPrimaryTranslucent">#B3000000</color>
+    <color name="colorPrimaryInverseTranslucent">#B3FFFFFF</color>
+
+</resources>

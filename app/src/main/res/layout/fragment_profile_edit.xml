@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButtondiff"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_white"
+            android:elevation="2dp"
+            android:src="@drawable/smallback" />
+
+        <TextView
+            style="@style/Poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:text="@string/edit_profile"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profiledefault"
+            app:civ_border_color="@color/deskGreen"
+            app:civ_border_width="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivEditAvatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="@id/profile"
+            app:layout_constraintEnd_toEndOf="@id/profile"
+            app:layout_constraintStart_toEndOf="@id/profile" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_corner"
+                android:padding="10dp"
+                app:iclTitle="@string/name">
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_name"
+                    android:inputType="textPersonName"
+                    android:padding="0dp"
+                    android:textColor="@color/black" />
+            </com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout>
+
+            <com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_corner"
+                android:padding="10dp"
+                app:iclTitle="Date of birth">
+
+
+                <TextView
+                    android:id="@+id/dob"
+                    style="@style/Poppins"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical|start"
+                    android:text="@string/pick_date_of_birth"
+                    android:textSize="14sp" />
+            </com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout>
+
+            <com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_corner"
+                android:padding="10dp"
+                app:iclTitle="Gender">
+
+                <Spinner
+                    android:id="@+id/gender"
+                    style="@style/Poppins"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout>
+
+            <com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_corner"
+                android:padding="10dp"
+                app:iclTitle="Country">
+
+                <TextView
+                    android:id="@+id/country"
+                    style="@style/Poppins"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Pick country"
+                    app:drawableRightCompat="@drawable/ic_baseline_arrow_drop_down_24"
+                    tools:ignore="RtlSymmetry" />
+            </com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout>
+
+            <com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_corner"
+                android:padding="10dp"
+                app:iclTitle="Phone Number">
+
+                <EditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:padding="0dp"
+                    android:textColor="@color/black" />
+            </com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout>
+
+
+            <com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout
+                android:id="@+id/icl_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_corner"
+                android:padding="10dp"
+                app:iclTitle="Your Company">
+
+                <Spinner
+                    android:id="@+id/company_name"
+                    style="@style/Poppins"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout>
+
+            <com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout
+                android:id="@+id/icl_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_corner"
+                android:padding="10dp"
+                app:iclTitle="Your Team">
+
+                <Spinner
+                    android:id="@+id/team_name"
+                    style="@style/Poppins"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout>
+
+            <com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout
+                android:id="@+id/icl_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_corner"
+                android:padding="10dp"
+                app:iclTitle="@string/hint_designation">
+
+                <Spinner
+                    android:id="@+id/etDesignation"
+                    style="@style/Poppins"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </com.ai.app.move.deskercise.ui.profile.widgets.InputContainerLayout>
+
+
+            <Button
+                android:id="@+id/save"
+                style="@style/Poppins"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_bounding_boxes"
+                android:text="@string/save" />
+
+            <Button
+                android:id="@+id/logout"
+                style="@style/Poppins"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_bounding_boxes"
+                android:text="@string/logout" />
+
+
+            <TextView
+                android:id="@+id/deleteAccount"
+                style="@style/Poppins"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_red_corner"
+                android:gravity="center"
+                android:text="@string/delete_account"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+
+

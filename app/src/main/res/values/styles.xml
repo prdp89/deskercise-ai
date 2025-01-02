@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Text" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Text.Small">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="Text.Small.Gray">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="Poppins">
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="TabLayoutTextStyleBold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="VerificationTextView" parent="Text">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawableStart">@drawable/close_redtheme_14</item>
+    </style>
+
+    <style name="SkipButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+
+</resources>

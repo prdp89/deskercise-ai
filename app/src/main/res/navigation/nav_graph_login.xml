@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentLoginPage"
+    tools:context=".ui.login.LoginActivity">
+
+    <fragment
+        android:id="@+id/fragmentLoginPage"
+        android:name="com.ai.app.move.deskercise.ui.login.FragmentLoginPage"
+        android:label="FragmentLoginPage"
+        tools:layout="@layout/fragment_login_page">
+        <action
+            android:id="@+id/action_fragmentLoginPage_to_fragmentLoginResetPassword"
+            app:destination="@id/fragmentLoginReset" />
+        <action
+            android:id="@+id/action_fragmentLoginPage_to_fragmentLoginRegister"
+            app:destination="@id/fragmentLoginRegister" />
+        <action
+            android:id="@+id/action_fragmentLoginPage_to_loginVerify"
+            app:destination="@id/loginVerify" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLoginRegister"
+        android:name="com.ai.app.move.deskercise.ui.login.FragmentLoginRegister"
+        android:label="FragmentLoginRegister"
+        tools:layout="@layout/fragment_login_register">
+        <action
+            android:id="@+id/action_fragmentLoginRegister_to_loginVerify"
+            app:destination="@id/loginVerify" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLoginReset"
+        android:name="com.ai.app.move.deskercise.ui.login.FragmentLoginForgot"
+        android:label="FragmentLoginResetPassword"
+        tools:layout="@layout/fragment_login_forgot">
+        <action
+            android:id="@+id/action_fragmentLoginReset_to_loginReset"
+            app:destination="@id/loginReset" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginReset"
+        android:name="com.ai.app.move.deskercise.ui.login.FragmentLoginReset"
+        android:label="loginReset"
+        tools:layout="@layout/fragment_login_reset"/>
+    <fragment
+        android:id="@+id/loginVerify"
+        android:name="com.ai.app.move.deskercise.ui.login.FragmentLoginVerify"
+        tools:layout="@layout/fragment_login_verify"/>
+</navigation>

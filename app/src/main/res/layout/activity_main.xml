@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.exerciseVision.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/silhouette_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:alpha="0.60"
+                android:scaleType="fitEnd"
+                android:src="@drawable/half_person" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/instruction"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28dp" />
+
+            <LinearLayout
+                android:id="@+id/bottom_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/pill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|bottom"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/inverse_color_circle"
+
+                        android:orientation="horizontal"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp">
+
+                        <ImageView
+                            android:id="@+id/clock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/clock" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="60dp"
+                            android:layout_height="56dp"
+                            android:layout_gravity="bottom"
+                            style="@style/Poppins"
+                            android:gravity="center"
+                            android:text="X sec"
+                            android:textColor="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/countersLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|bottom"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_edge_dark"
+
+                        android:gravity="start|bottom"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/greentored"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/green_to_red_gradient"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/goodRepCounterValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="0"
+                                android:textColor="@color/colorPrimaryInverse"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/goodRepCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_bold"
+
+                                android:text="Good"
+                                android:textColor="@color/colorPrimaryInverse"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/greentorednext"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/red_to_green_gradient"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/badRepCounterValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="0"
+                                android:textColor="@color/colorPrimaryInverse"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/badRepCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Bad"
+                                android:textColor="@color/colorPrimaryInverse"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="15dp"
+
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/currentRepCounter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="start"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:paddingStart="5dp"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="25dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text=" / "
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="25dp" />
+
+                                <TextView
+                                    android:id="@+id/totalRepCounter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:paddingEnd="5dp"
+                                    android:text="2"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="25dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_bold"
+                                android:paddingTop="5dp"
+                                android:text="Reps"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12dp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_square_gif"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+
+                    android:background="@drawable/rounded_edge_teal"
+                    android:clipToOutline="true"
+                    android:onClick="True"
+
+
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/vas_smile" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+
+        app:layout_anchor="@+id/relative_layout"
+        app:layout_anchorGravity="center" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/state"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:text="@string/state" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/stateValue"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:text="@string/state_value" />-->
+        <LinearLayout
+            android:id="@+id/top_panel"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="11dp"
+
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/exitButton"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="start"
+                    android:background="@drawable/circle_white"
+                    android:elevation="5dp"
+                    android:src="@drawable/smallback" />
+
+                <TextView
+                    android:id="@+id/tvPoint"
+                    style="@style/Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/horizontal_margin"
+                    android:textColor="@color/white" />
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/skipButton"-->
+<!--                    android:layout_width="114dp"-->
+<!--                    android:layout_height="64dp"-->
+<!--                    android:layout_gravity="center"-->
+
+<!--                    android:background="@drawable/circle_white"-->
+<!--                    android:elevation="5dp"-->
+<!--                    android:src="@drawable/skiptext" />-->
+
+                <Button
+                    android:id="@+id/skipButton"
+                    android:layout_width="114dp"
+                    android:layout_height="64dp"
+                    style="@style/SkipButtonStyle"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_white"
+                    app:backgroundTint="@null"
+                    android:elevation="5dp"
+                    android:text="Skip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/mid_instruction_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rounded_corner"
+                    style="@style/Poppins"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="3"
+                    android:textColor="@color/colorPrimaryInverse"
+                    android:textSize="28dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mid_instruction_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rounded_corner"
+                    style="@style/Poppins"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Exercise Completed!"
+                    android:textColor="@color/colorPrimaryInverse"
+                    android:textSize="28dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--    <include layout="@layout/bottom_sheet_layout"/>-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

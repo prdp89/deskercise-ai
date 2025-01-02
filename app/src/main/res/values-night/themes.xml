@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Deskercise" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/deskGreen</item>
+        <item name="colorPrimaryVariant">@color/deskDarkGreen</item>
+        <item name="colorOnSurface">@color/deskLightShadeGreen</item>
+    </style>
+</resources>

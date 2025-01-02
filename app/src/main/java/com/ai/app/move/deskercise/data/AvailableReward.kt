@@ -1,0 +1,36 @@
+package com.ai.app.move.deskercise.data
+
+import com.google.gson.annotations.SerializedName
+
+data class AvailableReward(
+    @SerializedName("pk") val pk: Int,
+    @SerializedName("name") var name: String,
+    @SerializedName("points") val points: Int,
+    @SerializedName("decimal_points") val decimalPoints: String,
+    @SerializedName("thumbnail_img_url") var thumbnailImgUrl: String = "",
+    @SerializedName("display_img_url") var displayImgUrl: String = "",
+    @SerializedName("quantity") val quantity: Int? = null,
+    @SerializedName("tier") val tier: Int,
+    @SerializedName("category_name") val categoryName: String,
+    @SerializedName("reward_subcategory") val rewardSubcategory: String,
+    @SerializedName("display_category") val displayCategory: String,
+    @SerializedName("redeemable") val redeemable: Boolean = false,
+    @SerializedName("reason") val reason: String = "",
+    @SerializedName("is_featured") val isFeatured: Boolean = false,
+    @SerializedName("description") val description: String,
+    @SerializedName("display_description") val displayDescription: String,
+    @SerializedName("real_money") val realMoney: String? = null,
+    @SerializedName("rating") val rating: String? = null,
+    @SerializedName("rating_count") val ratingCount: String? = null,
+    @SerializedName("is_physical_product") val isPhysicalProduct: Boolean = false,
+    @SerializedName("modified") val modified: String = "",
+    @SerializedName("reward_type") val rewardType: String,
+    @SerializedName("is_favorite") val isFavorite: Boolean = false,
+    @SerializedName("redemption_type") val redemptionType: String,
+    @SerializedName("valid_until") val validUntil: String? = null,
+    @SerializedName("is_amazon_product") val isAmazonProduct: Boolean = false,
+    @SerializedName("low_quantity") val lowQuantity: Int,
+    @SerializedName("stock") val stock: Int,
+    @SerializedName("allow_bulk") val allowBulk: Boolean = false,
+    @SerializedName("hide_reward_department") val hideRewardDepartment: Boolean = false,
+)

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_reward_detail"
+    app:startDestination="@id/rewardDetail">
+    <fragment
+        android:id="@+id/rewardDetail"
+        android:name="com.ai.app.move.deskercise.ui.rewards.detail.RewardDetailFragment"
+        tools:layout="@layout/fragment_reward_detail">
+        <argument
+            android:name="rewardId"
+            app:argType="integer"/>
+    </fragment>
+</navigation>

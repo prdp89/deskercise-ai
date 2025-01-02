@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--suppress AndroidDomInspection -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:tag="STARTING_EXERCISE_FRAGMENT"
+    tools:context=".ui.exerciseVision.ExerciseStartingFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/starting_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_edge"
+            android:backgroundTint="@color/black"
+            android:clipToOutline="true"
+            android:layout_weight="1">
+
+
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edge"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:id="@+id/status_bar"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/exercise_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Exercise "
+                    style="@style/Poppins">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:text="Starting in"
+                    android:fontFamily="@font/poppins_bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pill"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/circle_no_padding"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/inpill"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_inverse"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/clock" />
+
+                    <TextView
+                        android:id="@+id/starting_instruction_exercise_countdown_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="X sec"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sets"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="10dp"
+                    android:text="3 sets"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="160dp"
+
+        >
+
+        <TextView
+            android:id="@+id/starting_instruction_exercise_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="01"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:id="@+id/starting_instruction_exercise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_gravity="center_vertical"
+            android:text="Exercise Name"
+            android:textSize="32sp"
+            style="@style/Poppins"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="20sp"/>
+        <TextView
+            android:id="@+id/silent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textStyle="bold"
+            android:text="Turn off silent mode"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="20sp"/>
+        <TextView
+            android:id="@+id/audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="To hear audio cues"
+            android:textSize="16sp"
+            style="@style/Poppins"
+            android:textColor="@color/gray"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_exercise_menu_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:animateLayoutChanges="true"
+    tools:context=".ui.exerciseMenu.ExerciseMenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cl_start_exercise_menu_panel"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:orientation="horizontal"
+        android:fillViewport="true"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/program_names"
+    android:gravity="center_vertical"
+    android:layout_marginTop="10dp"
+    app:layout_constraintTop_toTopOf="@+id/cl_start_exercise_menu_panel"
+    app:layout_constraintStart_toStartOf="@+id/cl_start_exercise_menu_panel"
+    >
+    <ImageButton
+        android:id = "@+id/backButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="start"
+        android:src="@drawable/smallback"
+        android:background="@drawable/circle_white"
+        android:elevation="2dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_light"
+            android:paddingTop="10dp"
+            android:text=" Exercise Program"
+            android:layout_marginStart="30dp"
+            android:textSize="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_exercise_group_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@+id/program_names"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                android:id="@+id/program_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Mins"
+                android:textSize="32sp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+                <TextView
+                    android:id="@+id/program_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Exercises"
+                    android:textSize="24sp"
+
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/start_exercise_group_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:layout_marginEnd="10dp"-->
+
+<!--                android:src="@drawable/btnstartbutton"-->
+<!--                android:backgroundTint="@color/colorPrimary"-->
+<!--                android:background="@drawable/rounded_edge"/>-->
+
+            <FrameLayout
+                android:id="@+id/start_exercise_group_button"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|end"
+                android:layout_marginVertical="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/start_button"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/image_start_arrows"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_start_arrows" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Start"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintTop_toBottomOf="@+id/ll_exercise_group_list"
+            app:layout_constraintBottom_toBottomOf="@+id/cl_start_exercise_menu_panel">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nsv_for_rv_available_exercise"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toBottomOf="@+id/cl_start_exercise_menu_panel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_select_exercise_instructions">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_available_exercises"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/recycler_view_item_available_exercise_group_preview" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

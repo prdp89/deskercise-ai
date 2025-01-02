@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGray">#a475ec</color>
+    <color name="gray">#9b68e9</color>
+    <color name="deskGreen">#6c5393</color>
+    <color name="deskDarkGreen">#5e4486</color>
+    <color name="deskLightShadeGreen">#4b3173</color>
+    <color name="defaultBackground">#f1f1f2</color>
+
+
+    <color name="greenTheme">#6c5393</color>
+    <color name="redTheme">#5e4486</color>
+    <color name="blueTheme">#4b3173</color>
+
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryInverse">#FF000000</color>
+    <color name="colorPrimaryTranslucent">#66FFFFFF</color>
+    <color name="colorPrimaryInverseTranslucent">#52000000</color>
+    <color name="colorGreen">#00FF00</color>
+    <color name="colorRed">#FF0000</color>
+</resources>

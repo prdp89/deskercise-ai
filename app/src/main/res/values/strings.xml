@@ -1,0 +1,405 @@
+<resources>
+    <string name="tfe_pe_request_permission">This app needs camera permission.</string>
+    <string name="btn_start">Start Exercising!</string>
+    <string name="btn_display_exercise_group">Deskercise Programs</string>
+    <string name="default_notification_channel_id">deskercise_channel_id</string>
+    <string name="instruction">instruction_placeholder</string>
+    <string name="stretch_completed">Exercise Completed!</string>
+    <string name="add">ADD</string>
+    <string name="added">ADDED</string>
+    <string name="summary_title">Summary</string>
+
+    <string-array name="Designation">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>N/A</item>
+
+    </string-array>
+
+    <string-array name="Gender">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- No longer used as of KMM-1172, replaced by AndroidCountryPicker -->
+    <string-array name="Countries">
+        <item>Singapore</item>
+        <item> Malaysia</item>
+        <item>Vietnam</item>
+        <item> India</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Canada</item>
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua &amp; Deps</item>
+        <item>Argentina</item>
+        <item> Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Cape Verdev</item>
+        <item>Central African Rep</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Congo {Democratic Rep}</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item> Djibouti</item>
+        <item>Dominica</item>
+        <item> Dominican Republic</item>
+        <item>  East Timor</item>
+        <item> Ecuador</item>
+        <item> Egypt</item>
+        <item> El Salvador</item>
+        <item> Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item> Ethiopia</item>
+        <item>  Fiji</item>
+        <item>   Finland</item>
+        <item>  France</item>
+        <item>   Gabon</item>
+        <item> Gambia</item>
+        <item> Georgia</item>
+        <item> Germany</item>
+        <item> Ghana</item>
+        <item> Greece</item>
+        <item> Grenada</item>
+        <item> Guatemala</item>
+        <item> Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item> Guyana</item>
+        <item>Haiti</item>
+        <item> Honduras</item>
+        <item>Hungary</item>
+        <item> Iceland</item>
+        <item>Indonesia</item>
+        <item> Iran</item>
+        <item> Iraq</item>
+        <item> Ireland {Republic}</item>
+        <item> Israel</item>
+        <item> Italy</item>
+        <item> Ivory Coast</item>
+        <item> Jamaica</item>
+        <item> Japan</item>
+        <item>Jordan</item>
+        <item> Kazakhstan</item>
+        <item> Kenya</item>
+        <item> Kiribati</item>
+        <item>Korea North</item>
+        <item> Korea South</item>
+        <item> Kosovo</item>
+        <item> Kuwait</item>
+        <item>  Kyrgyzstan</item>
+        <item> Laos</item>
+        <item>  Latvia</item>
+        <item>Lebanon</item>
+        <item> Lesotho</item>
+        <item>Liberia</item>
+        <item> Libya</item>
+        <item>Liechtenstein</item>
+        <item> Lithuania</item>
+        <item>Luxembourg</item>
+        <item> Macedonia</item>
+        <item>Madagascar</item>
+        <item> Malawi</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item> Marshall Islands</item>
+        <item> Mauritania</item>
+        <item> Mauritius</item>
+        <item>Mexico</item>
+        <item> Micronesia</item>
+        <item>Moldova</item>
+        <item> Monaco</item>
+        <item> Mongolia</item>
+        <item>Montenegro</item>
+        <item> Morocco</item>
+        <item> Mozambique</item>
+        <item>Myanmar, {Burma}</item>
+        <item> Namibia</item>
+        <item>Nauru</item>
+        <item> Nepal</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item> Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item> Norway</item>
+        <item>Oman</item>
+        <item> Pakistan</item>
+        <item> Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Qatar</item>
+        <item>Romania</item>
+        <item>Russian Federation</item>
+        <item>Rwanda</item>
+        <item>St Kitts &amp; Nevis</item>
+        <item>St Lucia</item>
+        <item>Saint Vincent &amp; the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Sao Tome &amp; Principe</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item> Somalia</item>
+        <item>South Africa</item>
+        <item> South Sudan</item>
+        <item> Spain</item>
+        <item>Sri Lanka</item>
+        <item> Sudan</item>
+        <item> Suriname</item>
+        <item> Swaziland</item>
+        <item> Sweden</item>
+        <item> Switzerland</item>
+        <item> Syria</item>
+        <item> Taiwan</item>
+        <item> Tajikistan</item>
+        <item> Tanzania</item>
+        <item> Thailand</item>
+        <item>  Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad &amp; Tobago</item>
+        <item>Tunisia</item>
+        <item> Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Tuvalu</item>
+        <item>Uganda</item>
+        <item> Ukraine</item>
+        <item> United Arab Emirates</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican City</item>
+        <item>Venezuela</item>
+        <item> Yemen</item>
+        <item>Zambia</item>
+        <item> Zimbabwe</item>
+    </string-array>
+    <string-array name="domains">
+        <item>\@carousell.com</item>
+        <item>\@refash.com</item>
+        <item>\@chotot.com</item>
+        <item>\@yopmail.com</item>
+        <item>\@gmail.com</item>
+    </string-array>
+    <string-array name="Company">
+        <item>Company</item>
+    </string-array>
+    <string-array name="Team">
+        <item>Team</item>
+    </string-array>
+
+    <string-array name="LeaderboardOptions">
+        <item>Individual</item>
+        <item>Team</item>
+
+    </string-array>
+
+    <string name="app_name">Deskercise AI</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Deskercise AI</string>
+    <string name="Deskercise_Group_Exercise_label">Deskercise AI</string>
+    <string name="you_have_completed_d_reps">You have completed %s reps</string>
+    <string name="next">Next</string>
+    <string name="enter_verification_title">Please enter the verification code sent to %1$s</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="verification_subtitle">Verification code</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirmation_code">Confirmation Code</string>
+    <string name="enter_confirmation">Enter Confirmation Code</string>
+    <string name="verify">Verify</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_subheading">We’ll help you reset it and get back on track</string>
+    <string name="welcome_back">Welcome Back,</string>
+    <string name="deskercise">Deskercise</string>
+    <string name="login_subheader">Hello there, login to continue</string>
+    <string name="login">Login</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="your_score">Your Points</string>
+    <string name="team_points">Team Points</string>
+    <string name="sessions">Sessions</string>
+    <string name="current_streak">Current Streak</string>
+    <string name="see_all">See All</string>
+    <string name="_3rd_day">3 Days</string>
+    <string name="_7_days">7 Days</string>
+    <string name="_14_days">14 Days</string>
+    <string name="_21_days">21 Days</string>
+    <string name="_30_days">30 days</string>
+    <string name="points_history">Points History</string>
+    <string name="rewards_redemption">Rewards Redemption</string>
+    <string name="your_points">Your Points</string>
+    <string name="_0_day">0 Day</string>
+    <plurals name="day_streak">
+        <item quantity="zero">%d Days</item>
+        <item quantity="one">%d Day</item>
+        <item quantity="other">%d Days</item>
+    </plurals>
+    <string name="points">%d Points</string>
+    <string name="points_summary">🏆 %d Points</string>
+    <string name="start">Start</string>
+    <string name="_6_exercises">6 exercises</string>
+    <string name="_3_exercises">3 exercises</string>
+    <string name="_5_min">5 min</string>
+    <string name="_10_min">10 min</string>
+    <string name="_15_min">15 min</string>
+    <string name="logout">Logout</string>
+    <string name="change_avatar">Change Avatar</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="capture_photo">Capture a photo</string>
+    <string name="delete_photo">Delete avatar</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="email_address">Email Address</string>
+    <string name="msg_required_email">Please enter your email</string>
+    <string name="msg_email_format">Please enter a valid email address</string>
+    <string name="msg_code_format">Please enter a valid confirmation code</string>
+    <string name="msg_required_password">Please enter a password</string>
+    <string name="msg_incorrect_password">Your password was incorrect</string>
+    <string name="msg_invalid_password">Your password must be longer than 8 characters and include uppercase, lowercase letters, numbers, and special characters.</string>
+    <string name="msg_required_name">Please enter your name</string>
+    <string name="msg_required_company_code">Please enter company code</string>
+    <string name="msg_required_dob">Please enter your day of birth</string>
+    <string name="msg_required_phone_number">Please enter your phone number</string>
+    <string name="msg_required_designation">Please enter your job level</string>
+    <string name="msg_required_check_term_and_condition">Please agree to all terms and conditions before registration</string>
+    <string name="hint_name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="hint_designation">Job Level</string>
+    <string name="pick_date_of_birth">Pick date of birth</string>
+    <string name="save">Save</string>
+    <string name="msg_successful">Successful</string>
+    <string name="msg_resent_code_successful">Resent code successful!</string>
+    <string name="update_profile_successful">Update profile successful!</string>
+    <string name="great_job">Great Job!</string>
+    <string name="streak_description">Streaks are only counted if 2 exercises are completed without skipping reps</string>
+    <string name="resend_in_d_sec_s">Resend in %d sec(s)</string>
+    <string name="resend">Resend</string>
+    <string name="you_have">You have: </string>
+    <string name="x_points"> x points</string>
+    <string name="buy">Buy</string>
+    <string name="_50">+ 50</string>
+    <string name="_100">+ 100</string>
+    <string name="_80">+ 80</string>
+    <string name="_120">+ 120</string>
+    <string name="_150">+ 150</string>
+    <string name="points_only_count_for_the_first_5_sessions_daily">Points only count for the first 5 sessions daily</string>
+    <string name="you_bought_it">You bought it</string>
+    <string name="your_purchase_is_successful">Your purchase is successful</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="randomize">Randomized</string>
+    <string name="company_email_address">Company email address</string>
+    <string name="confirmation_code_will_be_sent_to_this_email">A confirmation code will be sent to this email</string>
+    <string name="permission_explained">Core fundamental are based on these permissions</string>
+    <string name="permission_enable_manually">You need to allow necessary permissions in Settings manually</string>
+    <string name="you_will_lose_this_randomization_if_you_exit_this_page_are_you_sure">"You will lose this randomization if you exit this page. Are you sure? "</string>
+    <string name="a_redemption_code_will_be_sent_to_your_email_shortly">A redemption code will be sent to your email shortly.</string>
+    <string name="points_left">Points left</string>
+    <plurals name="_points">
+        <item quantity="zero">%d points</item>
+        <item quantity="one">%d point</item>
+        <item quantity="other">%d points</item>
+    </plurals>
+    <string name="delete_account">Delete Account</string>
+    <string name="msg_confirm_delete_account">Deleting your account will remove all points and data that you have accumulated. Confirm?</string>
+    <string name="lb_delete_account_positive">No, do not delete</string>
+    <string name="lb_delete_account_negative">Yes, delete account</string>
+    <string name="register_account">Register Account</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="name">Name</string>
+    <string name="_for">for</string>
+    <string name="exit_program">Exit Program</string>
+    <string name="are_you_sure_you_want_to_exit_the_program">Are you sure you want to exit the program?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="unable_to_make_a_connection">Unable to make a connection</string>
+    <string name="version_info">Version 1.0.0 (1)</string>
+    <string name="code_optional">Code</string>
+    <string name="information">Information</string>
+    <string name="code_info">This is the code provided by Deskercise-AI.</string>
+    <string name="msg_required_code">Please enter your confirmation code</string>
+    <string name="my_points">My Points</string>
+    <string name="points_for_redemption">Points for Redemption</string>
+    <string name="my_rewards">My Rewards</string>
+    <string name="find_out_how_to_get_points">Find out how to get points</string>
+    <string name="available_rewards">Available Rewards</string>
+    <string name="active_rewards">Active Rewards</string>
+    <string name="past_rewards">Past Rewards</string>
+    <string name="_d_d_">(%d/%d)</string>
+    <string name="plus_d_points">+ %d points</string>
+    <string name="minus_d_points">- %d points</string>
+    <string name="okay">Okay!</string>
+    <string name="no_active_reward">There are no active rewards right now. \nPlease check again later.</string>
+    <string name="no_past_reward">There are no past rewards right now. \nPlease check again later.</string>
+    <string name="no_available_reward">There are no rewards available for redemption right now. \nPlease check again later.</string>
+    <string name="redeeming_this_reward_will_deduct">Redeeming this reward will deduct</string>
+    <string name="from_your_account">From your account</string>
+    <string name="redeem_note">To proceed, select \'Use Now\' to use your reward. If you select \'Use Later\', you reward will be stored in \'MY Wallet\' for later use. To exit, click \'X\', points will NOT be deducted</string>
+    <string name="use_now">Use Now</string>
+    <string name="use_later">Use Later</string>
+    <string name="passwords_match">Passwords Match</string>
+    <string name="passwords_do_not_match">Passwords Do Not Match</string>
+    <string name="_s_utc_plus_">%s (UTC+8)</string>
+    <string name="msg_reset_time">(Resets at 00:00 UTC+8)</string>
+    <string name="msg_reset_time_daily">(Resets at 00:00 UTC+8 daily)</string>
+    <string name="msg_reset_time_weekly">(Resets at Monday 00:00 UTC+8 weekly)</string>
+    <string name="msg_confirm_exit_exercise">All the points scored in this session will not be counted if you exit now. Are you sure?</string>
+</resources>

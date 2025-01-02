@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="text_small">11sp</dimen>
+    <dimen name="text_medium">13sp</dimen>
+</resources>

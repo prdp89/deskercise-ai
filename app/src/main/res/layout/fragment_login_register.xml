@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/defaultBackground">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/register_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_box_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/deskercise"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/Poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/register_account"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/_for"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/deskercise"
+                        android:textColor="@color/deskGreen"
+                        android:textSize="24sp"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/email_et"
+                        style="@style/Poppins"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="emailAddress"
+                        android:background="@drawable/login_bounding_boxes"
+                        android:hint="@string/email_address"
+                        android:minHeight="53dp"
+                        android:padding="10dp"
+                        android:textColor="@color/black" />
+
+                    <!--                <Spinner-->
+                    <!--                    android:id="@+id/domains"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="50dp"-->
+                    <!--                    style="@style/Poppins" />-->
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_enterexDetails"
+                    style="@style/Poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/confirmation_code_will_be_sent_to_this_email"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <EditText
+                    android:id="@+id/name_et"
+                    style="@style/Poppins"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:autofillHints="@string/name"
+                    android:background="@drawable/login_bounding_boxes"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:minHeight="53dp"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/login_bounding_boxes"
+                    android:textColorHint="@color/gray"
+                    app:boxBackgroundMode="none"
+                    app:errorEnabled="false"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_et"
+                        style="@style/Poppins"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="0dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/min_eight_char"
+                    style="@style/VerificationTextView"
+                    android:text=" Minimum 8 characters" />
+
+                <TextView
+                    android:id="@+id/one_uppercase_letter"
+                    style="@style/VerificationTextView"
+                    android:text=" At least one uppercase letter" />
+
+                <TextView
+                    android:id="@+id/one_lowercase_letter"
+                    style="@style/VerificationTextView"
+                    android:text=" At least one lowercase letter" />
+
+                <TextView
+                    android:id="@+id/one_number"
+                    style="@style/VerificationTextView"
+                    android:text=" At least one number" />
+
+                <TextView
+                    android:id="@+id/one_special_char"
+                    style="@style/VerificationTextView"
+                    android:text=" At least one special character" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cmfPasswordLayout_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/login_bounding_boxes"
+                    android:textColorHint="@color/gray"
+                    app:boxBackgroundMode="none"
+                    app:errorEnabled="false"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cmf_password_et"
+                        style="@style/Poppins"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="@string/confirm_password"
+                        android:inputType="textPassword"
+                        android:padding="0dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/password_match"
+                    style="@style/Text"
+                    android:layout_gravity="center"
+                    android:text="Passwords Do Not Match"
+                    android:textColor="@color/colorRed"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/code_et"
+                        style="@style/Poppins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/login_bounding_boxes"
+                        android:hint="@string/code_optional"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:minHeight="53dp"
+                        android:padding="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/ib_code_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/horizontal_margin"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/information"
+                        android:src="@drawable/baseline_info" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/terms_checkbox"
+                        style="@style/Poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/tnc"
+                        style="@style/Poppins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/poppins"
+                        android:text=""
+                        android:textColor="@color/deskGreen"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/register"
+                    style="@style/Poppins"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_button"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/already_have_an_account"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:paddingStart="20dp"
+                        android:text="@string/login"
+                        android:textColor="@color/deskGreen"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
